@@ -67,7 +67,7 @@ h2, button, footer {
     flex-direction: column;
     align-items: center;
     overflow-y: auto;
-    max-height: 90vh; /* Increased max-height to accommodate more buttons */
+    max-height: 95vh; /* Further increased max-height to accommodate more buttons */
     width: 100%;
 }
 
