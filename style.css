@@ -67,7 +67,7 @@ h2, button, footer {
     flex-direction: column;
     align-items: right;
     overflow-y: auto;
-    height: 10%
+    max-height: fit-content;
     width: 100%;
 }
 
@@ -78,9 +78,10 @@ button {
     border: 2px solid #555;
     padding-left: 7%;
     cursor: pointer;
+    max-height: 15%;
     transition: background-color 0.3s, transform 0.3s;
     width: 100%;
-    max-width: 300px;
+    max-width: 80%;
     border-radius: 5px;
 }
 
