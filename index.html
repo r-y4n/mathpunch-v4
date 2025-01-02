@@ -57,7 +57,7 @@
         <button onclick="setTimeout(() => { window.location.href='https://solixmath.github.io/crab'; }, 350);">Click Me</button>
 
         <h2>Games Requests</h2>
-        <button onclick="setTimeout(() => { window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSc6PG1pB-SmSDqf_gJ_DYWV5HWFtGCcWpgGf2EaS0EpKcICqQ/viewform?usp=sf_link'; }, 350);">Click Me</[...]
+        <button onclick="setTimeout(() => { window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSc6PG1pB-SmSDqf_gJ_DYWV5HWFtGCcWpgGf2EaS0EpKcICqQ/viewform?usp=sf_link'; }, 350);">Click Me</button>
 
         <h2>Adblocker</h2>
         <button onclick="setTimeout(() => { window.location.href='https://www.icloud.com/shortcuts/60f5af18cbfe435f886450e6a4c332e5'; }, 350);">Click Me</button>
@@ -77,13 +77,6 @@
         Made By Ozzy
     </footer>
 
-    <!-- Music Section -->
-    <div class="music-container">
-        <h2>Music</h2>
-        <button id="musicButton" onclick="toggleMusic()">Play Toxic - Polo G</button>
-        <audio id="musicPlayer" src="Toxic - Polo G.mp3"></audio>
-    </div>
-
     <script>
         // Disable scrolling during loading
         window.onload = function() {
@@ -94,18 +87,6 @@
                 document.body.style.overflow = 'auto'; // Enable scrolling
             }, 2000); // Wait for 2 seconds before fading out
         };
-
-        function toggleMusic() {
-            const musicPlayer = document.getElementById('musicPlayer');
-            const musicButton = document.getElementById('musicButton');
-            if (musicPlayer.paused) {
-                musicPlayer.play();
-                musicButton.textContent = 'Pause Toxic - Polo G';
-            } else {
-                musicPlayer.pause();
-                musicButton.textContent = 'Play Toxic - Polo G';
-            }
-        }
     </script>
 </body>
 </html>
