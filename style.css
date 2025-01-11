@@ -1,8 +1,8 @@
 /* Add this new CSS rule to style the Crate button */
 .crate-button {
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
+    width: 35px; /* Adjusted width */
+    height: 35px; /* Adjusted height */
+    border-radius: 17.5px; /* Adjusted border radius */
     display: flex;
     justify-content: center;
     align-items: center;
