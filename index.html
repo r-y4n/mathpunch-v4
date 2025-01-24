@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ixl</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading screen -->
+    <div id="loadingScreen">
+        <div class="loader"></div>
+    </div>
+
+    <div class="main"></div>
+
+    <h1>Welcome To mathpunch V3</h1>
+    <div class="button-container">
+        <h2>Games</h2>
+        <div id="contentContainer"></div>
+        <button onclick="loadContent('https://mathpunch.github.io/grasshopper/', 'contentContainer')">Roblox</button>
+        <button onclick="loadContent('https://mathpunch.github.io/duck/', 'contentContainer')">Block Blast</button>
+        <button onclick="loadContent('https://mathpunch.github.io/pig/', 'contentContainer')">OvO</button>
+        <button onclick="loadContent('https://mathpunch.github.io/panda/', 'contentContainer')">BitLife</button>
+        <button onclick="loadContent('https://mathpunch.github.io/kitty/', 'contentContainer')">Stickmanhook</button>
+        <button onclick="loadContent('https://mathpunch.github.io/dog/', 'contentContainer')">Super Mario 64</button>
+        <button onclick="loadContent('https://mathpunch.github.io/bear/', 'contentContainer')">Tiny Fishing</button>
+        <button onclick="loadContent('https://mathpunch.github.io/snake/', 'contentContainer')">Tap Tap Shots</button>
+        <button onclick="loadContent('https://mathpunch.github.io/shark/', 'contentContainer')">Drive Mad</button>
+        <button onclick="loadContent('https://mathpunch.github.io/zebra/', 'contentContainer')">Emulator JS</button>
+        <button onclick="loadContent('https://mathpunch.github.io/turtle/', 'contentContainer')">Wordle Unlimited</button>
+        <button onclick="loadContent('https://mathpunch.github.io/doggy/', 'contentContainer')">Fruit Ninja</button>
+        <button onclick="loadContent('https://mathpunch.github.io/fox/', 'contentContainer')">Rooftop Snipers</button>
+        <button onclick="loadContent('https://mathpunch.github.io/bat/', 'contentContainer')">Tunnel Rush</button>
+        <button onclick="loadContent('https://mathpunch.github.io/wolf/', 'contentContainer')">Burrito Bison</button>
+        <button onclick="loadContent('https://mathpunch.github.io/monkey/', 'contentContainer')">Trash Truck Simulator</button>
+    </div>
+
+    <footer>
+        Made By Ozzy
+    </footer>
+
+    <script>
+        // Disable scrolling during loading
+        window.onload = function() {
+            setTimeout(function() {
+                // Fade out the loading screen
+                document.getElementById('loadingScreen').classList.add('fadeOut');
+                // Enable scrolling once the loading screen fades out
+                document.body.style.overflow = 'auto'; // Enable scrolling
+            }, 2000); // Wait for 2 seconds before fading out
+        };
+
+        // Function to load content from an external URL
+        function loadContent(url, containerId) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(containerId).innerHTML = data;
+                })
+                .catch(error => console.error('Error fetching content:', error));
+        }
+    </script>
+</body>
+</html>
